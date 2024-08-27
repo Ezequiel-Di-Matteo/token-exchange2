@@ -1,0 +1,295 @@
+.invite-main {
+    max-width: 1750px;
+    margin: auto;
+    margin-top: 210px;
+  }
+  
+.invite-main > .invite-section > .invite-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
+  
+  }
+  
+.invite-article > h2 {
+    font-size: 3rem;
+  }
+  
+.invite-article > p:nth-child(2){
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 700px;
+  }
+  
+  .forms-container{
+    display: flex;
+    margin-top: 60px;
+    width: 100%;
+    max-width: 100%;
+    justify-content: center;
+  }
+  
+  .f-form{
+    width: 60%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .f-form > form > input{
+  display: flex;
+  width: 100%;
+  
+  }
+  
+  .results2{
+    width: 48%;
+    background-color: #cbcbcb;
+  }
+  .results{
+    background-color: #cbcbcb;
+  }
+  form{
+    display: flex;
+    width: 100%;
+    height: 67px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  align-items: center;
+  }
+  
+  .forms-container > .f-form:nth-child(2){
+    margin-left: 20px;
+  }
+  .forms-container > .f-form:nth-child(1){
+    margin-right: 20px;
+  }
+  
+  input{
+    height: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    color: #000;
+    font-size: 1.1rem;  
+  }
+  
+  
+  
+  .f-form  button{
+    width: 100%;
+    max-width: 250px;
+    height: 50px;
+    padding: initial;
+    margin-left: 20px;
+  }
+  
+  
+  h3{
+    font-size: 2rem;
+  }
+  
+.invite-button{
+    display: inline-block;
+    padding: 4px 2rem;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    background-color: #8a3fdf;
+    text-decoration: none;
+    border: none;
+    color: white;
+    box-shadow: 0 0 20px transparent;
+  }
+.invite-button:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 16px #8a3fdf;
+  }
+  
+  
+  
+  
+  @media screen and (max-width: 1250px) {
+  
+  
+    .invite-main > .invite-section > .invite-article {
+      justify-content: center;
+      align-items: center;
+    }
+    
+  }
+  
+  @media screen and (max-width: 1000px) {
+   .invite-button{
+    font-size: 1.1rem;
+    height: 40px;
+   }
+    h3{
+      font-size: 1.4rem;
+    }
+    .invite-article > h2 {
+      font-size: 2rem;
+    }
+    .invite-article > p:nth-child(2){
+      font-size: 1.2rem;
+    }
+    nav > ul > li > a:hover::after, nav > ul > .active > a::after{
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background-color: #00000000;
+    }
+  
+  .f-form{
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+  form{
+    flex-direction: column;
+    height: 120px;
+  }
+  .f-form button{
+    width: 100%;
+    margin-left: 0;
+    max-width: 100%;
+  }
+  
+  form > input{
+    margin-bottom: 20px;
+  }
+  .f-inputs{
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+  }
+  .f-inputs > input{
+    width: 100%;
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+  
+  .forms-container > .f-form:nth-child(1) {
+    margin-right: 0px;
+  }
+  
+  .forms-container > .f-form:nth-child(2) {
+    margin-left: 0px;
+    margin-top: 40px;
+  }
+  
+      .forms-container{
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+      }
+  
+      .invite-article{
+          margin-top: 250px;
+          margin-left: 40px;
+          margin-right: 40px;
+          margin-bottom: 40px;
+      }
+  
+      nav > ul > li.active::after{
+          display: none;
+      }
+    
+      nav > ul > li.active > a{
+          background-color: #0e0e0e;
+      }
+    header {
+      z-index: 5;
+      border-bottom: solid 2px #8247e5;
+    }
+    
+    nav {
+      position: absolute;
+      top: -200%;
+      right: 0%;
+      width: 100%;
+      max-width: 100%;
+      transition: all 0.3s;
+      opacity: 0;
+    background-color: #050505;
+      z-index: 1;
+    }
+    header{
+     background-color: #050505;
+    }
+    nav > ul {
+      flex-direction: column;
+      width: 100%;
+      align-items: flex-end;
+      justify-content: flex-start;
+    }
+  
+    nav > ul > li {
+      width: 100%;
+      height: 100px;
+      display: block;
+      border-radius: 0;
+      padding: 0;
+    }
+  
+    nav > ul > li > a {
+      display: flex;
+      border-radius: 0;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 80px;
+    }
+    .head-div{
+      height: 120px;
+    }
+  
+    nav > ul > li > a:hover {
+      background-color: #0e0e0e;
+    }
+  
+    #menuIcon {
+      display: block;
+      margin-right: 40px;
+      font-size: 1.7rem;
+      cursor: pointer;
+    }
+  
+    #menuIcon > i {
+      color: #8247e5;
+    }
+  
+    nav.open {
+      opacity: 1;
+      right: 0;
+      top: 120px;
+      margin-right: 0;
+      border-bottom: solid 2px #8247e5;
+    }
+  
+    .invite-main > .invite-section > .invite-article {
+      flex-direction: column;
+    }
+  
+    .invite-main{
+      margin-top: 180px;
+    }
+    .head-title{
+      width: 100px;
+      background-size: 100%;
+      }
+  }
+  
