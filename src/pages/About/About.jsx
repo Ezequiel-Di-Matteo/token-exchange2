@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom'; 
 import './About.css';
 
+
 const About = () => {
+    useEffect(() => {
+        document.title = "About | Once"; 
+    }, []);
     return (
         <main className='about-main'>
             <section className='about-section'>

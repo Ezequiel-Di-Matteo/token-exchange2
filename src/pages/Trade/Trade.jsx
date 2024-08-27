@@ -54,6 +54,8 @@ const TokenExchange = () => {
 
     useEffect(() => {
 
+        document.title = "Trade | Once";
+
         const ref = getQueryParam('ref');
 
         if (localStorage.getItem('storedWalletAddress') === null) {

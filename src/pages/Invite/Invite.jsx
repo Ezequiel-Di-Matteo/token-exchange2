@@ -3,6 +3,9 @@ import './Invite.css';
 
 const Invite = () => {
     useEffect(() => {
+
+        document.title = "Invite | Once";
+
         const form = document.getElementById('wallet-form');
         const handleSubmit = (event) => {
             event.preventDefault();

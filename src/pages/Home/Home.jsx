@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Home.css';
 import imagenSVG from './img.svg';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
+    useEffect(() => {
+        document.title = "Once"; 
+    }, []);
   return (
     <main className="home-main">
       <section className="home-section">
