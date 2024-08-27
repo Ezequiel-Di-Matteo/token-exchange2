@@ -28,10 +28,10 @@ const Invite = () => {
                     <div className="forms-container">
                         <div className="f-form">
                             <form className='invite-form' id="wallet-form">
-                                <input type="text" id="wallet-address" name="address" placeholder="Your Polygon wallet address" />
+                                <input className='invite-input' type="text" id="wallet-address" name="address" placeholder="Your Polygon wallet address" />
                                 <button className="invite-button">Generate link</button>
                             </form>
-                            <input type="text" id="link-output" readOnly value="Waiting for your wallet address..." className="results" />
+                            <input type="text" id="link-output" readOnly value="Waiting for your wallet address..." className="results invite-input" />
                         </div>
                     </div>
                 </article>

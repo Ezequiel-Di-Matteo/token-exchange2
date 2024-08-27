@@ -30,6 +30,7 @@ const TradeSection = ({
         <label htmlFor="token">Instant buy</label>
         <div className="trade-group">
           <input
+            className='trade-input'
             type="number"
             name="token"
             id="token"
@@ -49,6 +50,7 @@ const TradeSection = ({
         <label htmlFor="token2">Instant sell</label>
         <div className="trade-group">
           <input
+            className='trade-input'
             type="number"
             name="token2"
             id="token2"
@@ -56,7 +58,7 @@ const TradeSection = ({
             value={executeSellOrderPrice}
             onChange={(e) => setExecuteSellOrderPrice(e.target.value)}
           />
-          <button id="v3" className="trade-button">
+          <button id="v3" className="trade-button trade-v3">
             <FontAwesomeIcon icon={faRightLeft} />
           </button>
           <button className="trade-button2" type="submit">Sell</button>
@@ -68,6 +70,7 @@ const TradeSection = ({
         <label htmlFor="token3">Buy limit order</label>
         <div className="trade-group trade-f2">
           <input
+            className='trade-input'
             type="number"
             name="token3"
             id="token3"
@@ -76,6 +79,7 @@ const TradeSection = ({
             onChange={(e) => setCreateBuyOrderAmount(e.target.value)}
           />
           <input
+            className='trade-input'
             type="number"
             placeholder="Price"
             name="price"
@@ -92,6 +96,7 @@ const TradeSection = ({
         <label htmlFor="token4">Sell limit order</label>
         <div className="trade-group f2">
           <input
+            className='trade-input'
             type="number"
             name="token4"
             id="token4"
@@ -100,6 +105,7 @@ const TradeSection = ({
             onChange={(e) => setCreateSellOrderAmount(e.target.value)}
           />
           <input
+            className='trade-input'
             type="number"
             placeholder="Price"
             name="price2"

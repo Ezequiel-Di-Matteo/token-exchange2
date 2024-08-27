@@ -42,6 +42,7 @@ const BalanceSection = ({
                 <h3>ONCE: {balanceTokenA}</h3>
                 <form className='trade-form' onSubmit={(e) => { e.preventDefault(); withdrawTokenA(); }}>
                     <input
+                        className='trade-input'
                         type="text"
                         id="withdraw-amount"
                         placeholder="Withdraw amount"
@@ -52,6 +53,7 @@ const BalanceSection = ({
                 </form>
                 <form className='trade-form' onSubmit={(e) => { e.preventDefault(); approveTokenA(); }}>
                     <input
+                        className='trade-input'
                         type="text"
                         id="allow-amount"
                         placeholder="Allow amount"
@@ -62,6 +64,7 @@ const BalanceSection = ({
                 </form>
                 <form className='trade-form' onSubmit={(e) => { e.preventDefault(); depositTokenA(); }}>
                     <input
+                        className='trade-input'
                         type="text"
                         id="deposit-amount"
                         placeholder="Deposit amount"
@@ -76,6 +79,7 @@ const BalanceSection = ({
                 <h3>USDC: {balanceTokenB}</h3>
                 <form className='trade-form' onSubmit={(e) => { e.preventDefault(); withdrawTokenB(); }}>
                     <input
+                        className='trade-input'
                         type="text"
                         id="withdraw2-amount"
                         placeholder="Withdraw amount"
@@ -86,6 +90,7 @@ const BalanceSection = ({
                 </form>
                 <form className='trade-form' onSubmit={(e) => { e.preventDefault(); approveTokenB(); }}>
                     <input
+                        className='trade-input'
                         type="text"
                         id="allow2-amount"
                         placeholder="Allow amount"
@@ -96,6 +101,7 @@ const BalanceSection = ({
                 </form>
                 <form className='trade-form' onSubmit={(e) => { e.preventDefault(); depositTokenB(); }}>
                     <input
+                        className='trade-input'
                         type="text"
                         id="deposit2-amount"
                         placeholder="Deposit amount"
