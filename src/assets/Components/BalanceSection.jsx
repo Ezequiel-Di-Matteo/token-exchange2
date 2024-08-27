@@ -118,9 +118,9 @@ const BalanceSection = ({
             </div>
 
             {!account ? (
-                <p class="account-detection">Disconnected wallet</p>
+                <p className="account-detection">Disconnected wallet</p>
             ) : (
-                <p class="account-detection">Connected wallet: {account}</p>
+                <p className="account-detection">Connected wallet: {account}</p>
             )}
 
         </div>
