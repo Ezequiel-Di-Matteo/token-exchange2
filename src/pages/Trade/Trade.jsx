@@ -6,7 +6,27 @@ import './Trade.css';
 import OrderBook from '../../assets/Components/OrderBook';
 import TradeSection from '../../assets/Components/TradeSection';
 import BalanceSection from '../../assets/Components/BalanceSection';
-import Header from '../../assets/Components/Header';
+
+
+function getQueryParam(name) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(name);
+  }
+
+  const ref = getQueryParam('ref');
+
+  if (localStorage.getItem('storedWalletAddress') === null) {
+    localStorage.setItem('storedWalletAddress', ref);
+  }
+
+  let walletAddress = '';
+
+  if (localStorage.getItem('storedWalletAddress') == 'null') {
+    walletAddress = '0x34C54271F1e2FF7D62C88E63CE0ed4e336f4c9ae';
+  }
+  else {
+    walletAddress = localStorage.getItem('storedWalletAddress');
+  }
 
 
 const TokenExchange = () => {
@@ -33,6 +53,22 @@ const TokenExchange = () => {
     const [executeBuyOrderAmount, setExecuteBuyOrderAmount] = useState('');
 
     useEffect(() => {
+
+        const ref = getQueryParam('ref');
+
+        if (localStorage.getItem('storedWalletAddress') === null) {
+            localStorage.setItem('storedWalletAddress', ref);
+        }
+
+        let walletAddress = '';
+
+        if (localStorage.getItem('storedWalletAddress') == 'null') {
+            walletAddress = '0x34C54271F1e2FF7D62C88E63CE0ed4e336f4c9ae';
+        } else {
+            walletAddress = localStorage.getItem('storedWalletAddress');
+        }
+
+        // *************************************************************** //
         if (window.ethereum) {
             const web3 = new Web3(window.ethereum);
             setWeb3(web3);

@@ -1,6 +1,7 @@
 import React from 'react';
 import './Home.css';
 import imagenSVG from './img.svg';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -10,7 +11,7 @@ const Home = () => {
           <div className="home-textos">
             <h2 className='home-h2'>5k Market Cap Every Day</h2>
             <p className='home-p'>We launch a low market cap token day after day at 12:00 GMT</p>
-            <a href="trade/index.html" className="home-button">Start trading</a>
+            <Link to="/Trade" className="home-button">Start trading</Link>
           </div>
           
           <div className="home-img">

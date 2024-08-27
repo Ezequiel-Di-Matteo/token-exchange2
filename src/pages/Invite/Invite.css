@@ -43,7 +43,6 @@
   .f-form > .invite-form > .invite-input{
   display: flex;
   width: 100%;
-  
   }
   
   .results2{
@@ -86,7 +85,7 @@
     width: 100%;
     max-width: 250px;
     height: 50px;
-    padding: initial;
+    padding: 10px;
     margin-left: 20px;
   }
   
@@ -170,6 +169,7 @@
   
   .invite-form > .invite-input{
     margin-bottom: 20px;
+    margin-top: 20px;
   }
   .f-inputs{
     flex-direction: column;

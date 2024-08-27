@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; 
-import './about.css';
+import './About.css';
 
 const About = () => {
     return (
@@ -51,8 +51,8 @@ const About = () => {
                     </div>
 
                     <div className="about-buttons">
-                        <Link to="../trade/index.html" className="about-button">Start Trading</Link> {/* Changed to Link */}
-                        <Link to="../invite/index.html" className="about-button2">Invite</Link> {/* Changed to Link */}
+                        <Link to="/Trade" className="about-button">Start Trading</Link> 
+                        <Link to="/Invite" className="about-button2">Invite</Link> 
                     </div>
                 </article>
             </section>
