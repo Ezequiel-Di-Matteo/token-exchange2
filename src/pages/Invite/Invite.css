@@ -40,7 +40,7 @@
     display: flex;
     flex-direction: column;
   }
-  .f-form > form > input{
+  .f-form > .invite-form > input{
   display: flex;
   width: 100%;
   
@@ -53,7 +53,7 @@
   .results{
     background-color: #cbcbcb;
   }
-  form{
+  .invite-form{
     display: flex;
     width: 100%;
     height: 67px;
@@ -158,7 +158,7 @@
     max-width: 100%;
     width: 100%;
   }
-  form{
+  .invite-form{
     flex-direction: column;
     height: 120px;
   }

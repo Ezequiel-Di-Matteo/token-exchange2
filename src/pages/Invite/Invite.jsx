@@ -27,7 +27,7 @@ const Invite = () => {
 
                     <div className="forms-container">
                         <div className="f-form">
-                            <form id="wallet-form">
+                            <form className='invite-form' id="wallet-form">
                                 <input type="text" id="wallet-address" name="address" placeholder="Your Polygon wallet address" />
                                 <button className="invite-button">Generate link</button>
                             </form>

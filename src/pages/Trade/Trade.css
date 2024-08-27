@@ -39,13 +39,13 @@
     color: #d3d3d3;
   }
   
-  #pending-balance > .form-1 {
+  #pending-balance > .trade-form-1 {
     display: flex;
     width: 100%;
     flex-direction: column;
   }
   
-  .form-1 > input{
+  .trade-form-1 > input{
     border: none;
     outline: none;
     padding: 7px;
@@ -55,7 +55,7 @@
     background-color: #212121;
   }
   
-  #order-book, .trade-balance, #trade{
+  #order-book, .trade-balance, .trade-trade{
     color: white;
     width: 380px;
     background-color: #21212196;
@@ -98,7 +98,7 @@
     color: green;
   }
   
-  #order-book button, #trade button, .trade-balance button, .trade-cont-f button{
+  #order-book button, .trade-trade button, .trade-balance button, .trade-cont-f button{
     margin-top: 10px;
     margin-bottom: 10px;  
     height: 40px;
@@ -174,11 +174,11 @@
   
   
   
-  .form-group{
+  .trade-form-group{
     position: relative;
     margin-bottom: 10px;
   }
-  .form-group select{
+  .trade-form-group select{
     position: absolute;
     top: 30%;
     color: #444;
@@ -211,7 +211,7 @@
   
   
   
-  .form-type{
+  .trade-form-type{
     display: flex;
     flex-direction: column;
   }
@@ -229,7 +229,7 @@
     padding: 5px;
     border-radius: 10px;
   }
-  .form-type > label, h3 {
+  .trade-form-type > label, h3 {
     font-size: 1.2rem;
     font-weight: 400;
   }
@@ -243,24 +243,24 @@
     font-size: 1.1rem ;
   }
   
-  .f2 input{
+  .trade-f2 input{
     width: 49%;
   }
-  .group.f2{
+  .trade-group.trade-f2{
     margin-top: 10px;
     justify-content: space-between;
   }
   
-  .form-type p, .text-2 {
+  .trade-form-type p, .text-2 {
     text-align: center;
     margin-top: 10px;
     font-size: 0.9rem;
   }
-  .form-type{
+  .trade-form-type{
     margin-bottom: 20px;
   }
   
-  .button2{
+  .trade-button2{
     display: block;
     text-align: center;
     height: 35px !important;
@@ -279,7 +279,7 @@
     color: white;
     box-shadow: 0 0 20px transparent;
   }
-  .button2:hover{
+  .trade-button2:hover{
     transform: scale(1.05);
     box-shadow: 0 0 16px #8a3fdf;
   }
@@ -291,7 +291,7 @@
       align-items: center;
     }
   
-    #order-book, #trade{
+    #order-book, .trade-trade{
       margin-bottom: 40px;
     }
   

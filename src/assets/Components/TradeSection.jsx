@@ -21,12 +21,12 @@ const TradeSection = ({
   createSellOrder
 }) => {
   return (
-    <div id="trade">
+    <div className='trade-trade'>
       <div className="trade-head-dv">
         <h2>Trade</h2>
       </div>
 
-      <form className="form-type" onSubmit={(e) => { e.preventDefault(); executeBuyOrderAtMarket(); }}>
+      <form className="trade-form-type" onSubmit={(e) => { e.preventDefault(); executeBuyOrderAtMarket(); }}>
         <label htmlFor="token">Instant buy</label>
         <div className="trade-group">
           <input
@@ -40,12 +40,12 @@ const TradeSection = ({
           <button id="v2" className="trade-button">
             <FontAwesomeIcon icon={faRightLeft} />
           </button>
-          <button className="button2" type="submit">Buy</button>
+          <button className="trade-button2" type="submit">Buy</button>
         </div>
         <p>= {executeBuyOrderAmount} ONCE</p>
       </form>
 
-      <form className="form-type" onSubmit={(e) => { e.preventDefault(); executeSellOrderAtMarket(); }}>
+      <form className="trade-form-type" onSubmit={(e) => { e.preventDefault(); executeSellOrderAtMarket(); }}>
         <label htmlFor="token2">Instant sell</label>
         <div className="trade-group">
           <input
@@ -59,14 +59,14 @@ const TradeSection = ({
           <button id="v3" className="trade-button">
             <FontAwesomeIcon icon={faRightLeft} />
           </button>
-          <button className="button2" type="submit">Sell</button>
+          <button className="trade-button2" type="submit">Sell</button>
         </div>
         <p>= {executeSellOrderPrice} USDC</p>
       </form>
 
-      <form className="form-type f2" onSubmit={(e) => { e.preventDefault(); createBuyOrder(); }}>
+      <form className="trade-form-type trade-f2" onSubmit={(e) => { e.preventDefault(); createBuyOrder(); }}>
         <label htmlFor="token3">Buy limit order</label>
-        <div className="trade-group f2">
+        <div className="trade-group trade-f2">
           <input
             type="number"
             name="token3"
@@ -88,7 +88,7 @@ const TradeSection = ({
         <button className="trade-button" type="submit">Create limit order</button>
       </form>
 
-      <form className="form-type f2" onSubmit={(e) => { e.preventDefault(); createSellOrder(); }}>
+      <form className="trade-form-type trade-f2" onSubmit={(e) => { e.preventDefault(); createSellOrder(); }}>
         <label htmlFor="token4">Sell limit order</label>
         <div className="trade-group f2">
           <input
