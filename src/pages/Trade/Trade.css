@@ -98,13 +98,14 @@
     color: green;
   }
   
-  #order-book button, .trade-trade button, .trade-balance button, .trade-cont-f button{
+  #order-book button, .trade-trade button, .trade-balance .trade-button, .trade-cont-f button{
     margin-top: 10px;
     margin-bottom: 10px;  
     height: 40px;
     padding: 0;
     font-size: 1.1rem ;
   }
+
   
   .trade-cont-f{
     margin-top: 20px;
@@ -160,6 +161,7 @@
     color: white;
     box-shadow: 0 0 20px transparent;
   }
+
 .trade-button:hover{
     transform: scale(1.05);
     box-shadow: 0 0 16px #8a3fdf;

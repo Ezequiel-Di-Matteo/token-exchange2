@@ -120,7 +120,7 @@ const BalanceSection = ({
             {!account ? (
                 <p className="account-detection">Disconnected wallet</p>
             ) : (
-                <p className="account-detection">Connected wallet: {account}</p>
+                <p className="account-detection">{account}</p>
             )}
 
         </div>
